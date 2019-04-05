@@ -4,14 +4,7 @@
     "connector": "memory",
     "file": "mydata.json"
   },
-  "Container": {
-    "name": "Container",
-    "connector": "loopback-component-storage",
-    "provider": "filesystem",
-    "root": "./app/server/local-storage",
-    "nameConflict": "makeUnique",
-    "maxFileSize": "5000000000"
-  },
+
   "EmailIDs": {
     "name": "EmailIDs",
     "connector": "mail",
