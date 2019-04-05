@@ -1,0 +1,73 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins",
+      "../node_modules/loopback-ds-timestamp-mixin",
+      "../node_modules/loopback-paginator/lib"
+    ]
+  },
+  "User": {
+    "dataSource": "social-media-poster"
+  },
+  "AccessToken": {
+    "dataSource": "social-media-poster",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "social-media-poster",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "social-media-poster",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "social-media-poster",
+    "public": false
+  },
+  "Email": {
+    "dataSource": "EmailIDs"
+  },
+  "RegisterUser": {
+    "dataSource": "social-media-poster",
+    "public": true
+  },
+  "Campaign": {
+    "dataSource": "social-media-poster",
+    "public": true
+  },
+  "Container": {
+    "dataSource": "Container",
+    "public": true
+  },
+  "SocialMediaAccount": {
+    "dataSource": "social-media-poster",
+    "public": true
+  },
+  "Post": {
+    "dataSource": "social-media-poster",
+    "public": true
+  },
+
+  "mediaFileAsset": {
+    "dataSource": "transient",
+    "public": true
+  },
+  "Tag": {
+    "dataSource": "transient",
+    "public": true
+  }
+
+}

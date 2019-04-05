@@ -1,0 +1,44 @@
+{
+  "name": "mediaFileAsset",
+  "plural": "mediaFilesAssests",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "originalFilename": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "isCropped": {
+      "type": "boolean"
+    },
+    "thumbnail": {
+      "type": "string"
+    },
+    "network": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "tag": {
+      "type": "embedsMany",
+      "model": "Tag",
+      "property": "tags",
+      "options": {
+        "persistent": true,
+        "forceId": true,
+        "validate": false
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

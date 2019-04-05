@@ -1,0 +1,209 @@
+    // {
+    //   "accessType": "*",
+    //   "principalType": "ROLE",
+    //   "principalId": "companyAdmin",
+    //   "permission": "ALLOW"
+    // },
+    // {
+    //   "accessType": "*",
+    //   "principalType": "ROLE",
+    //   "principalId": "$unauthenticated",
+    //   "permission": "DENY"
+    // },
+    // {
+    //   "accessType": "*",
+    //   "principalType": "ROLE",
+    //   "principalId": "$unauthenticated",
+    //   "permission": "DENY"
+    // },
+    // {
+    //   "accessType": "*",
+    //   "principalType": "ROLE",
+    //   "principalId": "$owner",
+    //   "permission": "ALLOW"
+    // },
+    // {
+    //   "accessType": "*",
+    //   "principalType": "ROLE",
+    //   "principalId": "$authenticated",
+    //   "permission": "ALLOW"
+    // },
+    // {
+    //   "accessType": "*",
+    //   "principalType": "ROLE",
+    //   "principalId": "R",
+    //   "permission": "DENY"
+    // },
+    // {
+    //   "accessType": "EXECUTE",
+    //   "principalType": "ROLE",
+    //   "principalId": "R",
+    //   "permission": "ALLOW",
+    //   "property": "read"
+    // },
+    // {
+    //   "accessType": "*",
+    //   "principalType": "ROLE",
+    //   "principalId": "W",
+    //   "permission": "DENY"
+    // },
+    // {
+    //   "accessType": "EXECUTE",
+    //   "principalType": "ROLE",
+    //   "principalId": "W",
+    //   "permission": "ALLOW",
+    //   "property": "create"
+    // },
+    // {
+    //   "accessType": "*",
+    //   "principalType": "ROLE",
+    //   "principalId": "D",
+    //   "permission": "DENY"
+    // },
+    // {
+    //   "accessType": "EXECUTE",
+    //   "principalType": "ROLE",
+    //   "principalId": "R",
+    //   "permission": "ALLOW",
+    //   "property": "destroyById"
+    // },
+    // {
+    //   "accessType": "*",
+    //   "principalType": "ROLE",
+    //   "principalId": "RW",
+    //   "permission": "DENY"
+    // },
+    // {
+    //   "accessType": "EXECUTE",
+    //   "principalType": "ROLE",
+    //   "principalId": "RW",
+    //   "permission": "ALLOW",
+    //   "property": "read"
+    // },
+    // {
+    //   "accessType": "EXECUTE",
+    //   "principalType": "ROLE",
+    //   "principalId": "RW",
+    //   "permission": "ALLOW",
+    //   "property": "create"
+    // },
+    // {
+    //   "accessType": "*",
+    //   "principalType": "ROLE",
+    //   "principalId": "RD",
+    //   "permission": "DENY"
+    // },
+    // {
+    //   "accessType": "EXECUTE",
+    //   "principalType": "ROLE",
+    //   "principalId": "RD",
+    //   "permission": "ALLOW",
+    //   "property": "read"
+    // },
+    // {
+    //   "accessType": "EXECUTE",
+    //   "principalType": "ROLE",
+    //   "principalId": "RD",
+    //   "permission": "ALLOW",
+    //   "property": "destroyById"
+    // },
+    // {
+    //   "accessType": "EXECUTE",
+    //   "principalType": "ROLE",
+    //   "principalId": "RWD",
+    //   "permission": "DENY",
+    //   "property": "replaceById"
+    // },
+
+
+
+
+
+
+register user
+
+
+
+
+
+
+     {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW",
+      "property": "validateEmail"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW",
+      "property": "validateCompany"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW",
+      "property": "reset-password"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW",
+      "property": "validateCompany"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "R",
+      "permission": "ALLOW",
+      "property": "__get__campaigns"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "W",
+      "permission": "DENY",
+      "property": "__get__campaigns"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "RWD",
+      "permission": "ALLOW",
+      "property": "__updateById__campaigns"
+    }
+
+
+
+

@@ -1,0 +1,78 @@
+{
+  "name": "SocialMediaAccount",
+  "plural": "SocialMediaAccounts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "type": {
+      "type": "string",
+      "default": "FB"
+    },
+    "session": {
+      "type": "object"
+    },
+    "status": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": false
+    },
+    "followersCount": {
+      "type": "number",
+      "default": 0
+    },
+    "userName": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    },
+    "pictureThumbnail": {
+      "type": "string",
+      "default": "\\\\"
+    },
+    "lengthSession": {
+      "type": "object"
+    },
+    "businesses": {
+      "type": [
+        "object"
+      ]
+    },
+    "adAccounts": {
+      "type": [
+        "object"
+      ]
+    },
+    "accountPostInfoId": {
+      "type": "string"
+    },
+    "smPages": {
+      "type": [
+        "array"
+      ]
+    },
+    "smGroups": {
+      "type": [
+        "array"
+      ]
+    },
+    "linked": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "posts": {
+      "type": "hasMany",
+      "model": "Post",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

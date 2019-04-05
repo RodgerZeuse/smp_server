@@ -1,0 +1,24 @@
+{
+  "name": "Tag",
+  "plural": "tags",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "tag_text": {
+      "type": "string"
+    },
+    "x": {
+      "type": "string"
+    },
+    "y": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

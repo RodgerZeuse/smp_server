@@ -1,0 +1,66 @@
+{
+  "name": "Post",
+  "plural": "posts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": {
+      "createdAt": "createdOn",
+      "updatedAt": "updatedOn",
+      "required": false,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
+  "properties": {
+    "scheduleDate": {
+      "type": "date"
+    },
+    "socialMediaInfo": {
+      "type": "object"
+    },
+    "network": {
+      "type": "string"
+    },
+    "error": {
+      "type": "string",
+      "default": ""
+    },
+    "name": {
+      "type": "string",
+      "default": "Post"
+    },
+    "state": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "socialMediaAccounts": {
+      "type": "belongsTo",
+      "model": "SocialMediaAccount",
+      "foreignKey": "socialMediaAccountId"
+    },
+    "mediaFile": {
+      "type": "embedsMany",
+      "model": "mediaFileAsset",
+      "property": "mediaFiles",
+      "options": {
+        "forceId": true,
+        "validate": false,
+        "persistent": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

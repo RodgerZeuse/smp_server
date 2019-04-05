@@ -1,0 +1,85 @@
+{
+  "name": "Campaign",
+  "plural": "campaigns",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": {
+      "createdAt": "createdOn",
+      "updatedAt": "updatedOn",
+      "required": true,
+      "validateUpsert": true,
+      "silenceWarnings": false
+    }
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "type": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "scheduledAt": {
+      "type": "date"
+    },
+    "state": {
+      "type": "string"
+    },
+    "hashTags": {
+      "type": [
+        "string"
+      ]
+    },
+    "error": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "default": "Campaign"
+    },
+    "timezone": {
+      "type": "string"
+    },
+    "success": {
+      "type": "string"
+    },
+    "offset": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "posts": {
+      "type": "hasMany",
+      "model": "Post",
+      "foreignKey": ""
+    },
+    "campaignComments": {
+      "type": "hasMany",
+      "model": "comments",
+      "foreignKey": ""
+    },
+    "mediaFile": {
+      "type": "embedsMany",
+      "model": "mediaFileAsset",
+      "property": "mediaFiles",
+      "options": {
+        "forceId": true,
+        "persistent": true,
+        "validate": false
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

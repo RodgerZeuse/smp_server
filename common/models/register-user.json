@@ -1,0 +1,77 @@
+{
+  "name": "RegisterUser",
+  "plural": "registerusers",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+
+    "cardNumber": {
+      "type": "string"
+    },
+    "cardCvv": {
+      "type": "number"
+    },
+    "expiryDate": {
+      "type": "number"
+    },
+    "profileImage": {
+      "type": "string"
+    }
+
+  },
+  "validations": [],
+  "relations": {
+
+    "posts": {
+      "type": "hasMany",
+      "model": "Post",
+      "foreignKey": ""
+    },
+
+    "socialAccounts": {
+      "type": "hasMany",
+      "model": "SocialMediaAccount",
+      "foreignKey": ""
+    },
+    "campaigns": {
+      "type": "hasMany",
+      "model": "Campaign",
+      "foreignKey": ""
+    }
+  },
+  "acls": [{
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}
