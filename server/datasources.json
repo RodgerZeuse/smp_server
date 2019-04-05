@@ -8,7 +8,7 @@
     "name": "Container",
     "connector": "loopback-component-storage",
     "provider": "filesystem",
-    "root": "app/server/local-storage",
+    "root": "./app/server/local-storage",
     "nameConflict": "makeUnique",
     "maxFileSize": "5000000000"
   },
