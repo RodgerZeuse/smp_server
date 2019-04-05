@@ -12,7 +12,7 @@
     "name": "Container",
     "connector": "loopback-component-storage",
     "provider": "filesystem",
-    "root": "./server/local-storage",
+    "root": "./local-storage",
     "nameConflict": "makeUnique",
     "maxFileSize": "5000000000"
   },
