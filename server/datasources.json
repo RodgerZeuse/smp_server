@@ -12,6 +12,7 @@
     "nameConflict": "makeUnique",
     "maxFileSize": "5000000000"
   },
+
   "EmailIDs": {
     "name": "EmailIDs",
     "connector": "mail",
