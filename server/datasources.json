@@ -4,36 +4,42 @@
     "connector": "memory",
     "file": "mydata.json"
   },
-  "mongodb": {
-    "connector": "loopback-connector-mongodb",
-    "url": "mongodb://yamin:123@ds127644.mlab.com:27644/smp"
-  },
   "Container": {
     "name": "Container",
     "connector": "loopback-component-storage",
     "provider": "filesystem",
-    "root": "./local-storage",
+    "root": "./server/local-storage",
     "nameConflict": "makeUnique",
     "maxFileSize": "5000000000"
   },
   "EmailIDs": {
     "name": "EmailIDs",
     "connector": "mail",
-    "transports": [
-      {
-        "type": "SMTP",
-        "host": "smtp.gmail.com",
-        "secure": true,
-        "port": 465,
-        "auth": {
-          "user": "fistixdeveloper@gmail.com",
-          "pass": "rameez@fistix"
-        }
+    "transports": [{
+      "type": "SMTP",
+      "host": "smtp.gmail.com",
+      "secure": true,
+      "port": 465,
+      "auth": {
+        "user": "fistixdeveloper@gmail.com",
+        "pass": "rameez@fistix"
       }
-    ]
+    }]
   },
   "transient": {
     "name": "transient",
     "connector": "transient"
+  },
+
+
+  "heroku_l81cz8mq": {
+    "host": "ds133086.mlab.com",
+    "port": 33086,
+    "url": "mongodb://yamin:yamin123@ds133086.mlab.com:33086/heroku_l81cz8mq",
+    "database": "heroku_l81cz8mq",
+    "password": "yamin123",
+    "name": "heroku_l81cz8mq",
+    "user": "yamin",
+    "connector": "mongodb"
   }
 }

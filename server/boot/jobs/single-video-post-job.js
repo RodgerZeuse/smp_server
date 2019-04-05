@@ -11,7 +11,7 @@ async function singleVideoPostJob(Campaign, ctx, scheduledAt) {
   let localTime =  moment.tz.guess()
   let newTime = moment(scheduledAt).tz(localTime).format('YYYY-MM-DD hh:mm A');
   let convertedDate = new Date(newTime);
-  var conString = "mongodb://localhost:27017/smp_jobs";
+  var conString = "mongodb://yamin:yamin123@ds133086.mlab.com:33086/smp_jobs";
   var agenda = new Agenda({
     db: {
       address: conString,

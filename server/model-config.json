@@ -16,36 +16,38 @@
     ]
   },
   "User": {
-    "dataSource": "social-media-poster"
+    "dataSource": "heroku_l81cz8mq"
   },
   "AccessToken": {
-    "dataSource": "social-media-poster",
+    "dataSource": "heroku_l81cz8mq",
     "public": false
   },
   "ACL": {
-    "dataSource": "social-media-poster",
+    "dataSource": "heroku_l81cz8mq",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "social-media-poster",
+    "dataSource": "heroku_l81cz8mq",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "social-media-poster",
+    "dataSource": "heroku_l81cz8mq",
     "public": false
   },
   "Email": {
     "dataSource": "EmailIDs"
   },
   "RegisterUser": {
-    "dataSource": "social-media-poster",
+    "dataSource": "heroku_l81cz8mq",
     "public": true
   },
+
+
   "Campaign": {
-    "dataSource": "social-media-poster",
+    "dataSource": "heroku_l81cz8mq",
     "public": true
   },
   "Container": {
@@ -53,14 +55,13 @@
     "public": true
   },
   "SocialMediaAccount": {
-    "dataSource": "social-media-poster",
+    "dataSource": "heroku_l81cz8mq",
     "public": true
   },
   "Post": {
-    "dataSource": "social-media-poster",
+    "dataSource": "heroku_l81cz8mq",
     "public": true
   },
-
   "mediaFileAsset": {
     "dataSource": "transient",
     "public": true
@@ -69,5 +70,4 @@
     "dataSource": "transient",
     "public": true
   }
-
 }

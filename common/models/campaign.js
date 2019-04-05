@@ -28,12 +28,13 @@ var moment = require("moment-timezone");
 
 var download = require("download-file");
 
-const url = "mongodb://localhost:27017";
+const url = "mongodb://yamin:yamin123@ds133086.mlab.com:33086/smp_jobs";
 const dbName = "smp_jobs";
 
 let current_login_user = "";
 
-var conString = "mongodb://localhost:27017/smp_jobs";
+var conString =
+  "mongodb://yamin:yamin123@ds133086.mlab.com:33086/smp_jobs";
 var agenda = new Agenda({
   db: {
     address: conString,

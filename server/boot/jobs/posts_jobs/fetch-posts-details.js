@@ -10,7 +10,7 @@ var app = require('../../../server');
 
 async function getPostAnalytics(fbPostId) {
   // console.log(ctx);
-  var conString = "mongodb://localhost:27017/smp_jobs";
+  var conString = "mongodb://yamin:yamin123@ds133086.mlab.com:33086/smp_jobs";
   var agenda = new Agenda({
     db: {
       address: conString,

@@ -13,7 +13,6 @@
     "lastName": {
       "type": "string"
     },
-
     "cardNumber": {
       "type": "string"
     },
@@ -26,17 +25,14 @@
     "profileImage": {
       "type": "string"
     }
-
   },
   "validations": [],
   "relations": {
-
     "posts": {
       "type": "hasMany",
       "model": "Post",
       "foreignKey": ""
     },
-
     "socialAccounts": {
       "type": "hasMany",
       "model": "SocialMediaAccount",
@@ -48,7 +44,8 @@
       "foreignKey": ""
     }
   },
-  "acls": [{
+  "acls": [
+    {
       "accessType": "*",
       "principalType": "ROLE",
       "principalId": "$everyone",

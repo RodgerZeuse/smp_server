@@ -12,7 +12,7 @@ const io = socket(server);
 
 async function textPostJob(Campaign, ctx, scheduledAt) {
 
-  var conString = "mongodb://localhost:27017/smp_jobs";
+  var conString = "mongodb://yamin:yamin123@ds133086.mlab.com:33086/smp_jobs";
   var agenda = new Agenda({
     db: {
       address: conString,

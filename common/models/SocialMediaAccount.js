@@ -12,9 +12,9 @@ const Agenda = require("agenda");
 var app = require("../../server/server");
 const request = require("request-promise");
 const MongoClient = require("mongodb").MongoClient;
-const url = "mongodb://localhost:27017";
+const url = "mongodb://yamin:yamin123@ds133086.mlab.com:33086/smp_jobs";
 const dbName = "smp_jobs";
-var conString = "mongodb://localhost:27017/smp_jobs";
+var conString = "mongodb://yamin:yamin123@ds133086.mlab.com:33086/smp_jobs";
 var agenda = new Agenda({
   db: {
     address: conString,

@@ -4,7 +4,7 @@ const Agenda = require('agenda');
 module.exports = (app, cb) => {
 
   console.log('fb-account-refresh-job');
-  var conString = "mongodb://localhost:27017/smp_jobs";
+  var conString = "mongodb://yamin:yamin123@ds133086.mlab.com:33086/smp_jobs";
   var agenda = new Agenda({
     db: {
       address: conString,
