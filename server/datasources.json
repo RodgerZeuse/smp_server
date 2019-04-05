@@ -4,6 +4,8 @@
     "connector": "memory",
     "file": "mydata.json"
   },
+
+
   "Container": {
     "name": "Container",
     "connector": "loopback-component-storage",
