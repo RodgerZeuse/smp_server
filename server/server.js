@@ -4,6 +4,7 @@ var loopback = require("loopback");
 var boot = require("loopback-boot");
 var express = require("express");
 var request = require("request");
+var path = require("path");
 var app = (module.exports = loopback());
 process.env.PWD = process.cwd();
 app.set("view engine", "ejs");
