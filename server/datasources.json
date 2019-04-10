@@ -5,26 +5,35 @@
     "file": "mydata.json"
   },
 
+
+  "Container": {
+    "name": "Container",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/local-storage",
+    "nameConflict": "makeUnique",
+    "maxFileSize": "5000000000"
+  },
+
   "EmailIDs": {
     "name": "EmailIDs",
     "connector": "mail",
-    "transports": [
-      {
-        "type": "SMTP",
-        "host": "smtp.gmail.com",
-        "secure": true,
-        "port": 465,
-        "auth": {
-          "user": "fistixdeveloper@gmail.com",
-          "pass": "rameez@fistix"
-        }
+    "transports": [{
+      "type": "SMTP",
+      "host": "smtp.gmail.com",
+      "secure": true,
+      "port": 465,
+      "auth": {
+        "user": "fistixdeveloper@gmail.com",
+        "pass": "rameez@fistix"
       }
-    ]
+    }]
   },
   "transient": {
     "name": "transient",
     "connector": "transient"
   },
+
 
   "heroku_l81cz8mq": {
     "host": "ds133086.mlab.com",
