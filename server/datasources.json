@@ -6,7 +6,14 @@
   },
 
 
-
+  "Container": {
+    "name": "Container",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./",
+    "nameConflict": "makeUnique",
+    "maxFileSize": "5000000000"
+  },
 
   "EmailIDs": {
     "name": "EmailIDs",
