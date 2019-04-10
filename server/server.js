@@ -59,7 +59,7 @@ app.start = function() {
 var ds = loopback.createDataSource({
   connector: require("loopback-component-storage"),
   provider: "filesystem",
-  root: path.join(process.env.PWD + "/local-storage")
+  root: path.join(process.env.PWD)
 });
 
 var container = ds.createModel("Container");
