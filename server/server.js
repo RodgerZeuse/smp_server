@@ -42,6 +42,14 @@ require("loopback-ds-tree-mixin")(app);
 //   return app.server
 // }
 
+var ds = loopback.createDataSource({
+  connector: require("loopback-component-storage"),
+  provider: "filesystem",
+  root: path.join(process.env.PWD)
+});
+
+var container = ds.createModel("Container");
+
 app.start = function() {
   // start the web server
   var server = app.listen(function() {
@@ -55,14 +63,6 @@ app.start = function() {
   });
   return server;
 };
-
-var ds = loopback.createDataSource({
-  connector: require("loopback-component-storage"),
-  provider: "filesystem",
-  root: path.join(process.env.PWD)
-});
-
-var container = ds.createModel("Container");
 
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
